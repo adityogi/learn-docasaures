@@ -1,41 +1,29 @@
-# Website
+# Learning Docusaurus
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Installation
+⚡️ Docusaurus will help you ship a beautiful documentation site in no time.
+💸 Building a custom tech stack is expensive. Instead, focus on your content and just write Markdown files.
+💥 Ready for more? Use advanced features like versioning, i18n, search and theme customizations.
+💅 Check the best Docusaurus sites for inspiration and read some testimonials.
+🧐 Docusaurus is a static-site generator. It builds a single-page application with fast client-side navigation, leveraging the full power of React to make your site interactive. It provides out-of-the-box documentation features but can be used to create any kind of site (personal website, product, blog, marketing landing pages, etc).
 
-```
-$ yarn
-```
+## Fast Track ⏱️
 
-### Local Development
+- Understand Docusaurus in 5 minutes by playing!
+- Create a new Docusaurus site and follow the very short embedded tutorial.
 
-```
-$ yarn start
-```
+Install Node.js and create a new Docusaurus site using the Terminal (Here's how!!!):
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
+```text
+npx create-docusaurus@latest my-website classic
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Start the site:
 
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```text
+cd my-website
+npx docusaurus start
 ```
 
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Open `http://localhost:3000` and follow the tutorial.
