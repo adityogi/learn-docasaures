@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 
 module.exports = {
-  title: 'My Site',
+  title: 'Learn Docasaures',
   tagline: 'Tagline of my Site',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -35,6 +35,13 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        lastVersion: 'current',
+        versions: {
+          current: {
+            label: '1.0.0',
+            path: '1.0.0',
+          },
+        },
       }),
     ],
   ],
@@ -54,6 +61,12 @@ module.exports = {
             docId: 'intro',
             position: 'left',
             label: 'Tutorial',
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'left',
+            dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+            dropdownActiveClassDisabled: true,
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
