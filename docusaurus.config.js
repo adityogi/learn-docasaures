@@ -85,7 +85,7 @@ module.exports = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
+                label: 'Not Known',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
