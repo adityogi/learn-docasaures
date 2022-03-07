@@ -62,11 +62,16 @@ my-website
 
 Docusaurus is a modern static website generator so we need to build the website into a directory of static contents and put it on a web server so that it can be viewed. To build the website:
 
+**NPM**
+
 ```npm
 npm run build
 ```
 
+**YARN**
+
 ```yarn
 yarn run build
 ```
+
 and contents will be generated within the /build directory, which can be copied to any static file hosting service like GitHub pages, Vercel or Netlify. Check out the docs on deployment for more details.
