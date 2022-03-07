@@ -23,14 +23,20 @@ module.exports = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/adityogi/learn-docasaures/tree/master/docs',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: '1.1.1',
+              path: '1.1.1',
+            },
+          },
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/adityogi/learn-docasaures',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -43,10 +49,10 @@ module.exports = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Learn Docasaures',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Learn Docasaures Logo',
+          src: 'img/undraw_docusaurus_mountain.svg',
         },
         items: [
           {
@@ -55,7 +61,7 @@ module.exports = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -67,10 +73,10 @@ module.exports = {
         style: 'light',
         links: [
           {
-            title: 'Docs',
+            title: 'Read the Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Documentation',
                 to: '/docs/intro',
               },
             ],
@@ -100,13 +106,17 @@ module.exports = {
                 to: '/blog',
               },
               {
+                label: 'Vercel',
+                to: 'https://vercel.com/',
+              },
+              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/adityogi/learn-docasaures',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Learn Docasaures Hosted by Vercel.`,
       },
       prism: {
         theme: lightCodeTheme,
